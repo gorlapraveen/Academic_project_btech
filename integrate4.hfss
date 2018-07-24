@@ -1,0 +1,1625 @@
+$begin 'AnsoftProject'
+	Created='Wed Nov 02 14:37:42 2016'
+	FileOwnedByWorkbench=false
+	Product='HFSS'
+	NextUniqueID=0
+	MoveBackwards=false
+	$begin 'Desktop'
+		Version(15, 0)
+		InfrastructureVersion(1, 0)
+	$end 'Desktop'
+	$begin 'HFSSEnvironment'
+		Version(1, 0)
+	$end 'HFSSEnvironment'
+	$begin 'HFIEEnvironment'
+		Version(1, 0)
+	$end 'HFIEEnvironment'
+	$begin 'geometry3deditor'
+		Version(1, 0)
+	$end 'geometry3deditor'
+	$begin 'ProjectDatasets'
+		NextUniqueID=0
+		MoveBackwards=false
+		DatasetType='ProjectDatasetType'
+		$begin 'DatasetDefinitions'
+		$end 'DatasetDefinitions'
+	$end 'ProjectDatasets'
+	$begin 'Definitions'
+		$begin 'Folders'
+			Definitions(1104, 10000, 1, 1, 0, false, false)
+			Materials(1104, 9500, 9, 2, 1, false, false)
+		$end 'Folders'
+		$begin 'Materials'
+			$begin 'vacuum'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='1'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'vacuum'
+			$begin 'copper'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permeability='0.999991'
+				conductivity='58000000'
+				thermal_conductivity='400'
+				mass_density='8933'
+				specific_heat='385'
+				youngs_modulus='120000000000'
+				poissons_ratio='0.38'
+				thermal_expansion_coeffcient='1.77e-005'
+				ModTime=1132068239
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'copper'
+			$begin 'FR4_epoxy'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='4.4'
+				dielectric_loss_tangent='0.02'
+				thermal_conductivity='0.294'
+				mass_density='1900'
+				specific_heat='1150'
+				youngs_modulus='11000000000'
+				poissons_ratio='0.28'
+				thermal_expansion_coeffcient='1.5e-005'
+				ModTime=1132068239
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'FR4_epoxy'
+		$end 'Materials'
+		$begin 'Scripts'
+		$end 'Scripts'
+	$end 'Definitions'
+	DesignIDServer=2
+	MoveBackwards=false
+	$begin 'HFIEModel'
+		RepRewriteV2=true
+		Name='IEDesign1'
+		DesignID=0
+		'Allow Material Override'=false
+		'Calculate Lossy Dielectrics'=true
+		PECThreshold=1e+030
+		CondThreshold=10000
+		'Background Material'='vacuum'
+		$begin 'OutputVariable'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'OutputVariable'
+		$begin 'ModelSetup'
+			$begin 'Editor3D Doc Preferences'
+				'Plane Background'=true
+				BackgroundColor1=16777215
+				BackgroundColor2=0
+				'Need Lights'=true
+				'Ambient Light'=8355711
+				'Num Lights'=2
+				Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+				Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+			$end 'Editor3D Doc Preferences'
+			$begin 'DesignDatasets'
+				NextUniqueID=0
+				MoveBackwards=false
+				DatasetType='DesignDatasetType'
+				$begin 'DatasetDefinitions'
+				$end 'DatasetDefinitions'
+			$end 'DesignDatasets'
+			SnapMode=31
+			WorkingCS=1
+			$begin 'GeometryCore'
+				BlockVersionID=3
+				DataVersion=14
+				NativeKernel='ACIS'
+				NativeKernelVersionID=5
+				Units='mm'
+				InstanceID=-1
+				$begin 'ValidationOptions'
+					EntityCheckLevel='Strict'
+					IgnoreUnclassifiedObjects=false
+					SkipIntersectionChecks=false
+				$end 'ValidationOptions'
+				$begin 'GeometryOperations'
+					BlockVersionID=2
+					$begin 'AnsoftRangedIDServerManager'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=0
+							IDServerRangeMin=0
+							IDServerRangeMax=2146483647
+							NextUniqueID=437
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=1
+							IDServerRangeMin=2146483648
+							IDServerRangeMax=2146485547
+							NextUniqueID=2146483654
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+					$end 'AnsoftRangedIDServerManager'
+					StartBackGroundFaceID=2146483648
+					$begin 'CoordinateSystems'
+					$end 'CoordinateSystems'
+					$begin 'UserDefinedModels'
+					$end 'UserDefinedModels'
+					$begin 'ToplevelParts'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='substrate'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0.91
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"FR4_epoxy"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=431
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='PurgedPart'
+									$end 'NativeBodyParameters'
+									ParentPartID=34
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000034.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Cylinder1'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0.95
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"copper"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=432
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='PurgedPart'
+									$end 'NativeBodyParameters'
+									ParentPartID=62
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=1
+											NumWires=0
+											NumLoops=1
+											NumCoedges=4
+											NumEdges=4
+											NumVertices=4
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000062.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Feedline'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"Copper"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=433
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='PurgedPart'
+									$end 'NativeBodyParameters'
+									ParentPartID=227
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000227.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Boundary'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0.91
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"Copper"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=434
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='PurgedPart'
+									$end 'NativeBodyParameters'
+									ParentPartID=292
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000292.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box4'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"Copper"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=435
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='PurgedPart'
+									$end 'NativeBodyParameters'
+									ParentPartID=320
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000320.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Box5'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"Copper"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='NativeBody'
+									ID=436
+									ReferenceCoordSystemID=1
+									$begin 'NativeBodyParameters'
+										KernelVersion=5
+										SourceFile='PurgedPart'
+									$end 'NativeBodyParameters'
+									ParentPartID=388
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=6
+											NumWires=0
+											NumLoops=6
+											NumCoedges=24
+											NumEdges=12
+											NumVertices=8
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=-1
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=0
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+									$begin 'BodyBlock'
+										BodyFileName='0000388.sab'
+									$end 'BodyBlock'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+					$end 'ToplevelParts'
+					$begin 'OperandParts'
+					$end 'OperandParts'
+					$begin 'Planes'
+					$end 'Planes'
+					$begin 'Points'
+					$end 'Points'
+					$begin 'GeometryEntityLists'
+					$end 'GeometryEntityLists'
+					$begin 'CachedNames'
+						$begin 'allobjects'
+							allobjects(-1)
+						$end 'allobjects'
+						$begin 'boundary'
+							boundary(-1)
+						$end 'boundary'
+						$begin 'box'
+							box(4, 5)
+						$end 'box'
+						$begin 'cylinder'
+							cylinder(1)
+						$end 'cylinder'
+						$begin 'feedline'
+							feedline(-1)
+						$end 'feedline'
+						$begin 'global'
+							global(-1)
+						$end 'global'
+						$begin 'substrate'
+							substrate(-1)
+						$end 'substrate'
+					$end 'CachedNames'
+				$end 'GeometryOperations'
+				$begin 'GeometryDependencies'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 431)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 432)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 433)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 434)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 435)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 436)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+				$end 'GeometryDependencies'
+			$end 'GeometryCore'
+			GroupByMaterial('-1'=true)
+			GroupSheetByMaterial()
+			$begin 'LastUserInputs'
+				$begin 'HealingLastUserInput'
+					AutoHeal=true
+					TolerantStitch=true
+					SimplifyGeom=true
+					TightenGaps=true
+					StopAfterFirstStitchError=false
+					MaxStitchTol=0.001
+					ExplodeAndStitch=true
+					GeomSimplificationTol=-1
+					MaximumGeneratedRadiusForSimplification=-1
+					SimplifyType=2
+					TightenGapsWidth=1e-006
+					RemoveSliverFaces=false
+					RemoveSmallEdges=false
+					RemoveSmallFaces=false
+					SliverFaceTol=0
+					SmallEdgeTol=0
+					SmallFaceAreaTol=0
+					BoundingBoxScaleFactor=1250
+					RemoveHoles=false
+					RemoveChamfers=false
+					RemoveBlends=false
+					HoleRadiusTol=0
+					ChamferWidthTol=0
+					BlendRadiusTol=0
+					AllowableSurfaceAreaChange=5
+					AllowableVolumeChange=5
+				$end 'HealingLastUserInput'
+			$end 'LastUserInputs'
+		$end 'ModelSetup'
+		$begin 'BoundarySetup'
+			$begin 'GlobalBoundData'
+			$end 'GlobalBoundData'
+			$begin 'Boundaries'
+				NextUniqueID=27
+				MoveBackwards=false
+				$begin 'PerfE1'
+					ID=12
+					BoundType='PerfectE'
+					Faces(293, 295, 296, 297, 298)
+					ParentBndID=-1
+				$end 'PerfE1'
+			$end 'Boundaries'
+			$begin 'ProductSpecificData'
+				TerminalReferenceConductors(388)
+				$begin 'SortOrder'
+					Port[1: -1]
+					Terminal[1: -1]
+				$end 'SortOrder'
+			$end 'ProductSpecificData'
+		$end 'BoundarySetup'
+		$begin 'MeshSetup'
+			$begin 'MeshSettings'
+				$begin 'GlobalSurfApproximation'
+					SurfDevChoice=0
+					NormalDevChoice=1
+					AspectRatioChoice=1
+					PullToTrueSurf=false
+					SetFacePreservationLevel=0
+				$end 'GlobalSurfApproximation'
+			$end 'MeshSettings'
+			$begin 'MeshOperations'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'MeshOperations'
+		$end 'MeshSetup'
+		$begin 'AnalysisSetup'
+			$begin 'SolveSetups'
+				NextUniqueID=1
+				MoveBackwards=false
+				$begin 'Setup1'
+					ID=0
+					SetupType='HFIESetup'
+					MaximumPasses=6
+					MinimumPasses=1
+					MinimumConvergedPasses=1
+					PercentRefinement=30
+					Enabled=true
+					AdaptiveFreq='1GHz'
+					DoLambdaRefine=true
+					UseDefaultLambdaTarget=true
+					Target=0.25
+					DoMaterialLambda=true
+					MaxDeltaS=0.02
+					MaxDeltaE=0.1
+					UsePOSolver=false
+					UseDistributed=false
+					$begin 'Sweeps'
+						NextUniqueID=1
+						MoveBackwards=false
+						$begin 'Sweep1'
+							ID=0
+							IsEnabled=true
+							SetupType='LinearStep'
+							StartValue='1GHz'
+							StopValue='10GHz'
+							StepSize='0.1GHz'
+							Type='Interpolating'
+							SaveFields=false
+							InterpTolerance=0.5
+							InterpMaxSolns=250
+							InterpMinSolns=0
+							InterpMinSubranges=1
+							ExtrapToDC=false
+						$end 'Sweep1'
+					$end 'Sweeps'
+				$end 'Setup1'
+			$end 'SolveSetups'
+		$end 'AnalysisSetup'
+		$begin 'Optimetrics'
+			$begin 'OptimetricsSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'OptimetricsSetups'
+		$end 'Optimetrics'
+		$begin 'Solutions'
+			$begin 'Sources'
+			$end 'Sources'
+		$end 'Solutions'
+		$begin 'FieldsReporter'
+			$begin 'FieldsCalculator'
+				Line_Discretization=1000
+			$end 'FieldsCalculator'
+			$begin 'PlotDefaults'
+				Default_SolutionId=40
+				Default_PlotFolder='Automatic'
+				Default_Phase='0deg'
+				Default_Freq='1GHz'
+			$end 'PlotDefaults'
+			$begin 'FieldsPlotManagerID'
+				NextUniqueID=0
+				MoveBackwards=false
+				NumQuantityType=0
+				NumPlots=0
+			$end 'FieldsPlotManagerID'
+			$begin 'Report3dInGeomWnd'
+				Report3dNum=0
+			$end 'Report3dInGeomWnd'
+		$end 'FieldsReporter'
+		$begin 'RadField'
+			$begin 'FarFieldSetups'
+				NextUniqueID=16
+				MoveBackwards=false
+				$begin 'Infinite Sphere1'
+					Type='Infinite Sphere'
+					ID=0
+					VersionID=15
+					UseCustomRadiationSurface=false
+					ThetaStart='0deg'
+					ThetaStop='180deg'
+					ThetaStep='10deg'
+					PhiStart='0deg'
+					PhiStop='360deg'
+					PhiStep='10deg'
+					UseLocalCS=false
+				$end 'Infinite Sphere1'
+			$end 'FarFieldSetups'
+			$begin 'ArraySetup'
+				UseOption='NoArray'
+				$begin 'RegularArray'
+					NumUCells='10'
+					NumVCells='10'
+					CellUDist='10mm'
+					CellVDist='10mm'
+					UDirnX='1'
+					UDirnY='0'
+					UDirnZ='0'
+					VDirnX='0'
+					VDirnY='1'
+					VDirnZ='0'
+					FirstCellPosX='0mm'
+					FirstCellPosY='0mm'
+					FirstCellPosZ='0mm'
+					Behavior='UseSlaveSettings'
+					ScanAnglePhi='45deg'
+					ScanAngleTheta='45deg'
+					UDirnPhaseShift='0deg'
+					VDirnPhaseShift='0deg'
+				$end 'RegularArray'
+				$begin 'CustomArray'
+					NumCells=0
+					$begin 'Cell'
+					$end 'Cell'
+				$end 'CustomArray'
+			$end 'ArraySetup'
+			$begin 'NearFieldSetups'
+				NextUniqueID=16
+				MoveBackwards=false
+			$end 'NearFieldSetups'
+			RadFieldComputationVersion=1.4
+			RadfieldHeaderFile='RAD505E428014780776621.tmp'
+		$end 'RadField'
+		$begin 'SolutionManager'
+			$begin 'SimSetup'
+				TypeName='BaseSetup'
+				ID=39
+				Name='Setup1'
+				$begin 'Solution'
+					ID=40
+					Name='LastAdaptive'
+					$begin 'SimDataExtractor'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='1GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='X'
+								Column='0'
+								Units=''
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+						$end 'Sweeps'
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=41
+					Name='AdaptivePass'
+					$begin 'SimDataExtractor'
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=63
+					Name='Sweep1'
+					$begin 'SimDataExtractor'
+					$end 'SimDataExtractor'
+				$end 'Solution'
+			$end 'SimSetup'
+			$begin 'Version ID Map'
+				V=209
+				$begin 'Setup'
+					N='Setup1'
+					V=234
+					Soln(N='LastAdaptive', V=234)
+					Soln(N='AdaptivePass', V=234)
+					Soln(N='Sweep1', V=234)
+				$end 'Setup'
+			$end 'Version ID Map'
+			$begin 'ID Map'
+				$begin 'Setup'
+					N='Setup1'
+					I=39
+					Soln(N='LastAdaptive', I=40)
+					Soln(N='AdaptivePass', I=41)
+					Soln(N='Sweep1', I=63)
+				$end 'Setup'
+			$end 'ID Map'
+		$end 'SolutionManager'
+		$begin 'UserDefinedSolutionMgr'
+			NextUniqueID=1000000
+			MoveBackwards=false
+		$end 'UserDefinedSolutionMgr'
+		$begin 'DatasetSolutionMgr'
+			NextUniqueID=2000000
+			MoveBackwards=false
+		$end 'DatasetSolutionMgr'
+		Notes=$begin_cdata$		$end_cdata$
+		$begin 'AnimationSetups'
+		$end 'AnimationSetups'
+		CacheHeaderFile='HDR5D5A428014780786804.tmp'
+	$end 'HFIEModel'
+	$begin 'DataInstances'
+		$begin 'Instance'
+			DesignEditor='IEDesign1'
+			$begin 'HFIEDesignInstance'
+				DesignInstanceID=1
+				$begin 'WindowPosition'
+					$begin 'EditorWindow'
+						'3D Modeler'(Editor3d())
+					$end 'EditorWindow'
+				$end 'WindowPosition'
+				$begin 'ReportSetup'
+					$begin 'ReportManager'
+						$begin 'Reports'
+						$end 'Reports'
+						NextUniqueID=0
+						MoveBackwards=false
+						$begin 'NextVersID'
+							NextUniqueID=0
+							MoveBackwards=false
+						$end 'NextVersID'
+					$end 'ReportManager'
+					$begin 'Reports'
+					$end 'Reports'
+					$begin 'ReportsWindowInfoList'
+					$end 'ReportsWindowInfoList'
+				$end 'ReportSetup'
+				$begin 'Properties'
+				$end 'Properties'
+				$begin 'UserDefinedDocument'
+					$begin 'Data'
+					$end 'Data'
+				$end 'UserDefinedDocument'
+			$end 'HFIEDesignInstance'
+		$end 'Instance'
+	$end 'DataInstances'
+	$begin 'WBSystemIDToDesignInstanceIDMap'
+	$end 'WBSystemIDToDesignInstanceIDMap'
+	$begin 'WBSysIDSysDetails'
+	$end 'WBSysIDSysDetails'
+	$begin 'WBConnIDConnDetails'
+	$end 'WBConnIDConnDetails'
+$end 'AnsoftProject'
+$begin 'AllReferencedFilesForProject'
+$begin 'Design_0.setup/NativeGeometryFiles'
+NumFiles= 6
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000034.sab
+BIN000000010094
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      .À      3À              .@      3@š™™™™™ù?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME	substratelumpÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      .À      3À              .@      3@š™™™™™ù?	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?	rgb_colorstattribÿÿÿÿÿÿÿÿ          Æîß ‘à?‘à?888888è?shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      .À      3À              .@      3@š™™™™™ù?
+propertiesansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ 	substrate"           Á„„€face   ÿÿÿÿÿÿÿÿÿÿÿÿ	   
+      ÿÿÿÿ   
+      .À      3Àš™™™™™ù?      .@      3@š™™™™™ù?
+      .À      .@      3À      3@	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      .À      3À              .@      3@        
+      .À      .@      3À      3@loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      
+      .À      3Àš™™™™™ù?      .@      3@š™™™™™ù?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                š™™™™™ù?                      ğ?      ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ #   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      .À      3À              .@      3Àš™™™™™ù?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      .À      3À              .@      3@            planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                                              ğ?      ğ?                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ            
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   ¥îÛ $   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+
+      .À      3À              .À      3@š™™™™™ù?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!      
+      .À      3À              .@      3Àš™™™™™ù?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3Àš™™™™™é?              ğ?                              ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   #   $   %      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ&      '   (   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   &   )   *   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   ,         
+-   ÿÿÿÿedge.   ÿÿÿÿÿÿÿÿÿÿÿÿ/         3À0         3@   1   unknown
+      .@      3Àš™™™™™ù?      .@      3@š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ %   	fctd_markeyeattribÿÿÿÿÿÿÿÿ2   ÿÿÿÿ   ¥îß face3   ÿÿÿÿÿÿÿÿÿÿÿÿ4   5      ÿÿÿÿ6   
+
+      .À      3@              .@      3@š™™™™™ù?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7      
+      .À      3À              .À      3@š™™™™™ù?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À        š™™™™™é?      ğ?                                      ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ8   )   9   :      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ;      8   <      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ;   =   >      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   +      %   
+-   ÿÿÿÿedge?   ÿÿÿÿÿÿÿÿÿÿÿÿ@         3ÀA         3@$   B   unknown
+      .@      3À              .@      3@        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      C   D   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   F      (   
+5   ÿÿÿÿedgeG   ÿÿÿÿÿÿÿÿÿÿÿÿ0         .ÀH         .@'   I   unknown
+      .À      3@š™™™™™ù?      .@      3@š™™™™™ù?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   J      *   
+   ÿÿÿÿedgeK   ÿÿÿÿÿÿÿÿÿÿÿÿL         .À/         .@)   M   unknown
+      .À      3Àš™™™™™ù?      .@      3Àš™™™™™ù?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$      J   N   -   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   $   E   O   
+-   ÿÿÿÿloopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   4   
+      .@      3À              .@      3@š™™™™™ù?    idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ )   vertexP   ÿÿÿÿÿÿÿÿÿÿÿÿ   Q   vertexR   ÿÿÿÿÿÿÿÿÿÿÿÿ   S   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@        š™™™™™ù?              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ &   	fctd_markeyeattribÿÿÿÿÿÿÿÿT   ÿÿÿÿ   ¥îß faceU   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-      ÿÿÿÿV   
+
+      .@      3À              .@      3@š™™™™™ù?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE      
+      .À      3@              .@      3@š™™™™™ù?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@š™™™™™é?              ğ¿                              ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿW   C   F   X      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ   !   "   <   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   W   !   :   
+   ÿÿÿÿedgeY   ÿÿÿÿÿÿÿÿÿÿÿÿL   š™™™™™é¿Z   š™™™™™é?9   [   unknown
+      .À      3À              .À      3Àš™™™™™ù?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   "   W   \      ÿÿÿÿedge]   ÿÿÿÿÿÿÿÿÿÿÿÿA         .ÀZ         .@8   ^   unknown
+      .À      3À              .@      3À        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   E   #   >   
+5   ÿÿÿÿedge_   ÿÿÿÿÿÿÿÿÿÿÿÿ`         .À@         .@=   a   unknown
+      .À      3@              .@      3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   ¥îÛ -   vertexb   ÿÿÿÿÿÿÿÿÿÿÿÿ%   c   vertexd   ÿÿÿÿÿÿÿÿÿÿÿÿN   e   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@                              ğ¿        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   9   &   D   
+   ÿÿÿÿedgef   ÿÿÿÿÿÿÿÿÿÿÿÿH         3ÀL         3@C   g   unknown
+      .À      3Àš™™™™™ù?      .À      3@š™™™™™ù?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ=   '   ,   O   5   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ'   =   7   X   
+5   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ(   ¥îÛ *   vertexh   ÿÿÿÿÿÿÿÿÿÿÿÿ(   i   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@š™™™™™ù?      ğ¿                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)   8   +   N   
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*   ¥îÛ ,   vertexj   ÿÿÿÿÿÿÿÿÿÿÿÿD   k   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3Àš™™™™™ù?      ğ?                edgel   ÿÿÿÿÿÿÿÿÿÿÿÿ/   š™™™™™é¿A   š™™™™™é?+   m   unknown
+      .@      3À              .@      3Àš™™™™™ù?edgen   ÿÿÿÿÿÿÿÿÿÿÿÿ0   š™™™™™é¿@   š™™™™™é?,   o   unknown
+      .@      3@              .@      3@š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   ¥îÛ 5   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3Àš™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0   ¥îÛ 6   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ3      ¥îÛ '   	fctd_markeyeattribÿÿÿÿÿÿÿÿp   ÿÿÿÿ4   ¥îß planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@        š™™™™™é?      ğ¿                                      ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9   7   ;   \   
+   ÿÿÿÿedgeq   ÿÿÿÿÿÿÿÿÿÿÿÿH   š™™™™™é¿`   š™™™™™é?F   r   unknown
+      .À      3@              .À      3@š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ:   ¥îÛ 1   vertexs   ÿÿÿÿÿÿÿÿÿÿÿÿ\   t   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3Àš™™™™™é?                      ğ¿edgeu   ÿÿÿÿÿÿÿÿÿÿÿÿZ         3À`         3@W   v   unknown
+      .À      3À              .À      3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ<   ¥îÛ .   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3À              ğ¿                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ>   ¥îÛ 0   vertexw   ÿÿÿÿÿÿÿÿÿÿÿÿ>   x   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@              ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ@   ¥îÛ 9   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   ¥îÛ :   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3À        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   ¥îÛ +   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À        š™™™™™ù?              ğ¿        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿH   ¥îÛ 7   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL   ¥îÛ 8   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3Àš™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿN   ¥îÛ 2   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3Àš™™™™™é?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿO   ¥îÛ 4   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@š™™™™™é?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿU   4   ¥îÛ (   idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿX   ¥îÛ 3   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@š™™™™™é?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿZ   ¥îÛ ;   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3À        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\   ¥îÛ /   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À                              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ`   ¥îÛ <   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@        End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 9378 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000062.sab
+BIN000000003997
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      &ÀÚòáõl,Àš™™™™™ù?      &@      @š™™™™™ù?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME	Cylinder1lumpÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      &ÀÚòáõl,Àš™™™™™ù?      &@      @š™™™™™ù?	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?	rgb_colorstattribÿÿÿÿÿÿÿÿ          Æîß ‘à?‘à?888888è?shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      &ÀÚòáõl,Àš™™™™™ù?      &@      @š™™™™™ù?
+propertiesansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ 	Cylinder1>           Á„„€face   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	      ÿÿÿÿ
+   
+
+      &ÀÚòáõl,Àš™™™™™ù?      &@      @š™™™™™ù?	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      
+      &ÀÚòáõl,Àš™™™™™ù?      &@      @š™™™™™ù?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              Àš™™™™™ù?                      ğ?      ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ ×   coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿ   	   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿ   	   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿ   	   ÿÿÿÿedge   ÿÿÿÿÿÿÿÿÿÿÿÿ   x¤H’z] À   hË‡×w²	@      unknown
+      @Úòáõl,Àš™™™™™ù?      @âÖm[¡è!Àš™™™™™ù?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ÿÿÿÿ   	   ÿÿÿÿedge   ÿÿÿÿÿÿÿÿÿÿÿÿ   nKÎİvõ¿   hé¨µî@      unknown
+      &ÀÚòáõl,Àš™™™™™ù?      &@      @š™™™™™ù?edge   ÿÿÿÿÿÿÿÿÿÿÿÿ   ¼´Ä+ @   Fé\c²@      unknown
+      ÀãÖm[¡è!Àš™™™™™ù?      @      @š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ Ü   vertex   ÿÿÿÿÿÿÿÿÿÿÿÿ      vertex    ÿÿÿÿÿÿÿÿÿÿÿÿ   !   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @      &Àš™™™™™ù?              ğ¿        
+      À
+      @edge"   ÿÿÿÿÿÿÿÿÿÿÿÿ   hË‡×w²	À   x¤H’z] @   #   unknown
+      ÀÚòáõl,Àš™™™™™ù?      ÀâÖm[¡è!Àš™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ Ø   vertex$   ÿÿÿÿÿÿÿÿÿÿÿÿ   %   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              Àš™™™™™ù?                      ğ?      &@                      ğ?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ Ú   vertex&   ÿÿÿÿÿÿÿÿÿÿÿÿ   '   ellipsecurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              Àš™™™™™ù?       €       €      ğ¿      @                      ğ?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ Ş   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @âÖm[¡è!Àš™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ß   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      @Úòáõl,Àš™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ İ   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      À      &Àš™™™™™ù?              ğ?        
+      À
+      @idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ à   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ÀÚòáõl,Àš™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ á   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ÀâÖm[¡è!Àš™™™™™ù?End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 3281 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000227.sab
+BIN000000010092
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      ô¿      @š™™™™™ù?      ô?      3@Âõ(\ú?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEFeedlinelumpÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      ô¿      @š™™™™™ù?      ô?      3@Âõ(\ú?	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?	rgb_colorstattribÿÿÿÿÿÿÿÿ          Æîß ‘à?‘à?888888è?shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      ô¿      @š™™™™™ù?      ô?      3@Âõ(\ú?
+propertiesansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ Feedlineã           Á„„€face   ÿÿÿÿÿÿÿÿÿÿÿÿ	   
+      ÿÿÿÿ   
+      ô¿      @Âõ(\ú?      ô?      3@Âõ(\ú?
+      ô¿      ô?      À      @	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      ô¿      @š™™™™™ù?      ô?      3@š™™™™™ù?
+      ô¿      ô?      À      @loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      
+      ô¿      @Âõ(\ú?      ô?      3@Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ             €*@Âõ(\ú?                      ğ?      ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ ä   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      ô¿      @š™™™™™ù?      ô?      @Âõ(\ú?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      ô¿      @š™™™™™ù?      ô?      3@š™™™™™ù?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ             €*@š™™™™™ù?                      ğ?      ğ?                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ            
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   ¥îÛ å   	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+
+      ô¿      @š™™™™™ù?      ô¿      3@Âõ(\ú?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!      
+      ô¿      @š™™™™™ù?      ô?      @Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @®Gázú?              ğ?                              ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   #   $   %      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ&      '   (   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   &   )   *   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   ,         
+-   ÿÿÿÿedge.   ÿÿÿÿÿÿÿÿÿÿÿÿ/         À0         @   1   unknown
+      ô?      @Âõ(\ú?      ô?      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ æ   	fctd_markeyeattribÿÿÿÿÿÿÿÿ2   ÿÿÿÿ   ¥îß face3   ÿÿÿÿÿÿÿÿÿÿÿÿ4   5      ÿÿÿÿ6   
+
+      ô¿      3@š™™™™™ù?      ô?      3@Âõ(\ú?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7      
+      ô¿      @š™™™™™ù?      ô¿      3@Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿     €*@®Gázú?      ğ?                                      ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ8   )   9   :      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ;      8   <      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ;   =   >      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   +      %   
+-   ÿÿÿÿedge?   ÿÿÿÿÿÿÿÿÿÿÿÿ@         ÀA         @$   B   unknown
+      ô?      @š™™™™™ù?      ô?      3@š™™™™™ù?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      C   D   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   F      (   
+5   ÿÿÿÿedgeG   ÿÿÿÿÿÿÿÿÿÿÿÿ0         ô¿H         ô?'   I   unknown
+      ô¿      3@Âõ(\ú?      ô?      3@Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   J      *   
+   ÿÿÿÿedgeK   ÿÿÿÿÿÿÿÿÿÿÿÿL         ô¿/         ô?)   M   unknown
+      ô¿      @Âõ(\ú?      ô?      @Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$      J   N   -   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   $   E   O   
+-   ÿÿÿÿloopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   4   
+      ô?      @š™™™™™ù?      ô?      3@Âõ(\ú?    idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ê   vertexP   ÿÿÿÿÿÿÿÿÿÿÿÿ   Q   vertexR   ÿÿÿÿÿÿÿÿÿÿÿÿ   S   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?     €*@Âõ(\ú?              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ ç   	fctd_markeyeattribÿÿÿÿÿÿÿÿT   ÿÿÿÿ   ¥îß faceU   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-      ÿÿÿÿV   
+
+      ô?      @š™™™™™ù?      ô?      3@Âõ(\ú?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE      
+      ô¿      3@š™™™™™ù?      ô?      3@Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@®Gázú?              ğ¿                              ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿW   C   F   X      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ   !   "   <   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   W   !   :   
+   ÿÿÿÿedgeY   ÿÿÿÿÿÿÿÿÿÿÿÿL   À…ëQ¸¿Z   À…ëQ¸?9   [   unknown
+      ô¿      @š™™™™™ù?      ô¿      @Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   "   W   \      ÿÿÿÿedge]   ÿÿÿÿÿÿÿÿÿÿÿÿA         ô¿Z         ô?8   ^   unknown
+      ô¿      @š™™™™™ù?      ô?      @š™™™™™ù?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   E   #   >   
+5   ÿÿÿÿedge_   ÿÿÿÿÿÿÿÿÿÿÿÿ`         ô¿@         ô?=   a   unknown
+      ô¿      3@š™™™™™ù?      ô?      3@š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   ¥îÛ î   vertexb   ÿÿÿÿÿÿÿÿÿÿÿÿ%   c   vertexd   ÿÿÿÿÿÿÿÿÿÿÿÿN   e   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?     €*@š™™™™™ù?              ğ¿        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   9   &   D   
+   ÿÿÿÿedgef   ÿÿÿÿÿÿÿÿÿÿÿÿH         ÀL         @C   g   unknown
+      ô¿      @Âõ(\ú?      ô¿      3@Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ=   '   ,   O   5   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ'   =   7   X   
+5   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ(   ¥îÛ ë   vertexh   ÿÿÿÿÿÿÿÿÿÿÿÿ(   i   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@Âõ(\ú?      ğ¿                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)   8   +   N   
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*   ¥îÛ í   vertexj   ÿÿÿÿÿÿÿÿÿÿÿÿD   k   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @Âõ(\ú?      ğ?                edgel   ÿÿÿÿÿÿÿÿÿÿÿÿ/   À…ëQ¸¿A   À…ëQ¸?+   m   unknown
+      ô?      @š™™™™™ù?      ô?      @Âõ(\ú?edgen   ÿÿÿÿÿÿÿÿÿÿÿÿ0   À…ëQ¸¿@   À…ëQ¸?,   o   unknown
+      ô?      3@š™™™™™ù?      ô?      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   ¥îÛ ö   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      @Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0   ¥îÛ ÷   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ3      ¥îÛ è   	fctd_markeyeattribÿÿÿÿÿÿÿÿp   ÿÿÿÿ4   ¥îß planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?     €*@®Gázú?      ğ¿                                      ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9   7   ;   \   
+   ÿÿÿÿedgeq   ÿÿÿÿÿÿÿÿÿÿÿÿH   À…ëQ¸¿`   À…ëQ¸?F   r   unknown
+      ô¿      3@š™™™™™ù?      ô¿      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ:   ¥îÛ ò   vertexs   ÿÿÿÿÿÿÿÿÿÿÿÿ\   t   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      @®Gázú?                      ğ¿edgeu   ÿÿÿÿÿÿÿÿÿÿÿÿZ         À`         @W   v   unknown
+      ô¿      @š™™™™™ù?      ô¿      3@š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ<   ¥îÛ ï   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              @š™™™™™ù?      ğ¿                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ>   ¥îÛ ñ   vertexw   ÿÿÿÿÿÿÿÿÿÿÿÿ>   x   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@š™™™™™ù?      ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ@   ¥îÛ ú   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      3@š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   ¥îÛ û   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      @š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   ¥îÛ ì   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿     €*@Âõ(\ú?              ğ¿        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿH   ¥îÛ ø   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL   ¥îÛ ù   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      @Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿN   ¥îÛ ó   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      @®Gázú?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿO   ¥îÛ õ   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      3@®Gázú?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿU   4   ¥îÛ é   idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿX   ¥îÛ ô   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      3@®Gázú?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿZ   ¥îÛ ü   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      @š™™™™™ù?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\   ¥îÛ ğ   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿     €*@š™™™™™ù?              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ`   ¥îÛ ı   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      3@š™™™™™ù?End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 9376 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000292.sab
+BIN000000010092
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      .À      3ÀÂõ(\ú?      .@      3@®GázÔD@string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEBoundarylumpÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      .À      3ÀÂõ(\ú?      .@      3@®GázÔD@	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?	rgb_colorstattribÿÿÿÿÿÿÿÿ          Æîß ‘à?‘à?888888è?shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      .À      3ÀÂõ(\ú?      .@      3@®GázÔD@
+propertiesansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ Boundary$          Á„„€face   ÿÿÿÿÿÿÿÿÿÿÿÿ	   
+      ÿÿÿÿ   
+      .À      3À®GázÔD@      .@      3@®GázÔD@
+      .À      .@      3À      3@	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      .À      3ÀÂõ(\ú?      .@      3@Âõ(\ú?
+      .À      .@      3À      3@loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      
+      .À      3À®GázÔD@      .@      3@®GázÔD@    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                ®GázÔD@                      ğ?      ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ %  	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      .À      3ÀÂõ(\ú?      .@      3À®GázÔD@loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      .À      3ÀÂõ(\ú?      .@      3@Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                Âõ(\ú?                      ğ?      ğ?                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ            
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   ¥îÛ &  	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+
+      .À      3ÀÂõ(\ú?      .À      3@®GázÔD@loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!      
+      .À      3ÀÂõ(\ú?      .@      3À®GázÔD@    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3À)\Âõ¨5@              ğ?                              ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   #   $   %      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ&      '   (   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   &   )   *   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   ,         
+-   ÿÿÿÿedge.   ÿÿÿÿÿÿÿÿÿÿÿÿ/         3À0         3@   1   unknown
+      .@      3À®GázÔD@      .@      3@®GázÔD@idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ '  	fctd_markeyeattribÿÿÿÿÿÿÿÿ2   ÿÿÿÿ   ¥îß face3   ÿÿÿÿÿÿÿÿÿÿÿÿ4   5      ÿÿÿÿ6   
+
+      .À      3@Âõ(\ú?      .@      3@®GázÔD@loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7      
+      .À      3ÀÂõ(\ú?      .À      3@®GázÔD@    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À        )\Âõ¨5@      ğ?                                      ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ8   )   9   :      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ;      8   <      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ;   =   >      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   +      %   
+-   ÿÿÿÿedge?   ÿÿÿÿÿÿÿÿÿÿÿÿ@         3ÀA         3@$   B   unknown
+      .@      3ÀÂõ(\ú?      .@      3@Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      C   D   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   F      (   
+5   ÿÿÿÿedgeG   ÿÿÿÿÿÿÿÿÿÿÿÿ0         .ÀH         .@'   I   unknown
+      .À      3@®GázÔD@      .@      3@®GázÔD@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   J      *   
+   ÿÿÿÿedgeK   ÿÿÿÿÿÿÿÿÿÿÿÿL         .À/         .@)   M   unknown
+      .À      3À®GázÔD@      .@      3À®GázÔD@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$      J   N   -   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   $   E   O   
+-   ÿÿÿÿloopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   4   
+      .@      3ÀÂõ(\ú?      .@      3@®GázÔD@    idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ +  vertexP   ÿÿÿÿÿÿÿÿÿÿÿÿ   Q   vertexR   ÿÿÿÿÿÿÿÿÿÿÿÿ   S   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@        ®GázÔD@              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ (  	fctd_markeyeattribÿÿÿÿÿÿÿÿT   ÿÿÿÿ   ¥îß faceU   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-      ÿÿÿÿV   
+
+      .@      3ÀÂõ(\ú?      .@      3@®GázÔD@loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE      
+      .À      3@Âõ(\ú?      .@      3@®GázÔD@    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@)\Âõ¨5@              ğ¿                              ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿW   C   F   X      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ   !   "   <   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   W   !   :   
+   ÿÿÿÿedgeY   ÿÿÿÿÿÿÿÿÿÿÿÿL   ÿÿÿÿÿÿ3ÀZ         4@9   [   unknown
+      .À      3ÀÂõ(\ú?      .À      3À®GázÔD@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   "   W   \      ÿÿÿÿedge]   ÿÿÿÿÿÿÿÿÿÿÿÿA         .ÀZ         .@8   ^   unknown
+      .À      3ÀÂõ(\ú?      .@      3ÀÂõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   E   #   >   
+5   ÿÿÿÿedge_   ÿÿÿÿÿÿÿÿÿÿÿÿ`         .À@         .@=   a   unknown
+      .À      3@Âõ(\ú?      .@      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   ¥îÛ /  vertexb   ÿÿÿÿÿÿÿÿÿÿÿÿ%   c   vertexd   ÿÿÿÿÿÿÿÿÿÿÿÿN   e   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@        Âõ(\ú?              ğ¿        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   9   &   D   
+   ÿÿÿÿedgef   ÿÿÿÿÿÿÿÿÿÿÿÿH         3ÀL         3@C   g   unknown
+      .À      3À®GázÔD@      .À      3@®GázÔD@coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ=   '   ,   O   5   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ'   =   7   X   
+5   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ(   ¥îÛ ,  vertexh   ÿÿÿÿÿÿÿÿÿÿÿÿ(   i   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@®GázÔD@      ğ¿                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)   8   +   N   
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*   ¥îÛ .  vertexj   ÿÿÿÿÿÿÿÿÿÿÿÿD   k   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3À®GázÔD@      ğ?                edgel   ÿÿÿÿÿÿÿÿÿÿÿÿ/   ÿÿÿÿÿÿ3ÀA         4@+   m   unknown
+      .@      3ÀÂõ(\ú?      .@      3À®GázÔD@edgen   ÿÿÿÿÿÿÿÿÿÿÿÿ0   ÿÿÿÿÿÿ3À@         4@,   o   unknown
+      .@      3@Âõ(\ú?      .@      3@®GázÔD@idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   ¥îÛ 7  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3À®GázÔD@idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0   ¥îÛ 8  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@®GázÔD@idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ3      ¥îÛ )  	fctd_markeyeattribÿÿÿÿÿÿÿÿp   ÿÿÿÿ4   ¥îß planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@        )\Âõ¨5@      ğ¿                                      ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9   7   ;   \   
+   ÿÿÿÿedgeq   ÿÿÿÿÿÿÿÿÿÿÿÿH   ÿÿÿÿÿÿ3À`         4@F   r   unknown
+      .À      3@Âõ(\ú?      .À      3@®GázÔD@idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ:   ¥îÛ 3  vertexs   ÿÿÿÿÿÿÿÿÿÿÿÿ\   t   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3À)\Âõ¨5@                      ğ¿edgeu   ÿÿÿÿÿÿÿÿÿÿÿÿZ         3À`         3@W   v   unknown
+      .À      3ÀÂõ(\ú?      .À      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ<   ¥îÛ 0  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3ÀÂõ(\ú?      ğ¿                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ>   ¥îÛ 2  vertexw   ÿÿÿÿÿÿÿÿÿÿÿÿ>   x   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@Âõ(\ú?      ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ@   ¥îÛ ;  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   ¥îÛ <  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3ÀÂõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   ¥îÛ -  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À        ®GázÔD@              ğ¿        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿH   ¥îÛ 9  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@®GázÔD@idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL   ¥îÛ :  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3À®GázÔD@idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿN   ¥îÛ 4  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3À)\Âõ¨5@                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿO   ¥îÛ 6  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@)\Âõ¨5@                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿU   4   ¥îÛ *  idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿX   ¥îÛ 5  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@)\Âõ¨5@                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿZ   ¥îÛ =  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3ÀÂõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\   ¥îÛ 1  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À        Âõ(\ú?              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ`   ¥îÛ >  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@Âõ(\ú?End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 9376 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000320.sab
+BIN000000010084
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      .À      3À              .@      3@¸…ëQ¸®?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEBox4lumpÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      .À      3À              .@      3@¸…ëQ¸®?	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?	rgb_colorstattribÿÿÿÿÿÿÿÿ          Æîß ‘à?‘à?888888è?shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      .À      3À              .@      3@¸…ëQ¸®?
+propertiesansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ Box4@          Á„„€face   ÿÿÿÿÿÿÿÿÿÿÿÿ	   
+      ÿÿÿÿ   
+      .À      3À¸…ëQ¸®?      .@      3@¸…ëQ¸®?
+      .À      .@      3À      3@	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      .À      3À              .@      3@        
+      .À      .@      3À      3@loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      
+      .À      3À¸…ëQ¸®?      .@      3@¸…ëQ¸®?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                ¸…ëQ¸®?                      ğ?      ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ A  	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      .À      3À              .@      3À¸…ëQ¸®?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      .À      3À              .@      3@            planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                                              ğ?      ğ?                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ            
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   ¥îÛ B  	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+
+      .À      3À              .À      3@¸…ëQ¸®?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!      
+      .À      3À              .@      3À¸…ëQ¸®?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3À¸…ëQ¸?              ğ?                              ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   #   $   %      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ&      '   (   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   &   )   *   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   ,         
+-   ÿÿÿÿedge.   ÿÿÿÿÿÿÿÿÿÿÿÿ/         3À0         3@   1   unknown
+      .@      3À¸…ëQ¸®?      .@      3@¸…ëQ¸®?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ C  	fctd_markeyeattribÿÿÿÿÿÿÿÿ2   ÿÿÿÿ   ¥îß face3   ÿÿÿÿÿÿÿÿÿÿÿÿ4   5      ÿÿÿÿ6   
+
+      .À      3@              .@      3@¸…ëQ¸®?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7      
+      .À      3À              .À      3@¸…ëQ¸®?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À        ¸…ëQ¸?      ğ?                                      ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ8   )   9   :      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ;      8   <      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ;   =   >      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   +      %   
+-   ÿÿÿÿedge?   ÿÿÿÿÿÿÿÿÿÿÿÿ@         3ÀA         3@$   B   unknown
+      .@      3À              .@      3@        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      C   D   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   F      (   
+5   ÿÿÿÿedgeG   ÿÿÿÿÿÿÿÿÿÿÿÿ0         .ÀH         .@'   I   unknown
+      .À      3@¸…ëQ¸®?      .@      3@¸…ëQ¸®?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   J      *   
+   ÿÿÿÿedgeK   ÿÿÿÿÿÿÿÿÿÿÿÿL         .À/         .@)   M   unknown
+      .À      3À¸…ëQ¸®?      .@      3À¸…ëQ¸®?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$      J   N   -   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   $   E   O   
+-   ÿÿÿÿloopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   4   
+      .@      3À              .@      3@¸…ëQ¸®?    idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ G  vertexP   ÿÿÿÿÿÿÿÿÿÿÿÿ   Q   vertexR   ÿÿÿÿÿÿÿÿÿÿÿÿ   S   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@        ¸…ëQ¸®?              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ D  	fctd_markeyeattribÿÿÿÿÿÿÿÿT   ÿÿÿÿ   ¥îß faceU   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-      ÿÿÿÿV   
+
+      .@      3À              .@      3@¸…ëQ¸®?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE      
+      .À      3@              .@      3@¸…ëQ¸®?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@¸…ëQ¸?              ğ¿                              ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿW   C   F   X      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ   !   "   <   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   W   !   :   
+   ÿÿÿÿedgeY   ÿÿÿÿÿÿÿÿÿÿÿÿL   ¸…ëQ¸¿Z   ¸…ëQ¸?9   [   unknown
+      .À      3À              .À      3À¸…ëQ¸®?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   "   W   \      ÿÿÿÿedge]   ÿÿÿÿÿÿÿÿÿÿÿÿA         .ÀZ         .@8   ^   unknown
+      .À      3À              .@      3À        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   E   #   >   
+5   ÿÿÿÿedge_   ÿÿÿÿÿÿÿÿÿÿÿÿ`         .À@         .@=   a   unknown
+      .À      3@              .@      3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   ¥îÛ K  vertexb   ÿÿÿÿÿÿÿÿÿÿÿÿ%   c   vertexd   ÿÿÿÿÿÿÿÿÿÿÿÿN   e   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@                              ğ¿        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   9   &   D   
+   ÿÿÿÿedgef   ÿÿÿÿÿÿÿÿÿÿÿÿH         3ÀL         3@C   g   unknown
+      .À      3À¸…ëQ¸®?      .À      3@¸…ëQ¸®?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ=   '   ,   O   5   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ'   =   7   X   
+5   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ(   ¥îÛ H  vertexh   ÿÿÿÿÿÿÿÿÿÿÿÿ(   i   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@¸…ëQ¸®?      ğ¿                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)   8   +   N   
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*   ¥îÛ J  vertexj   ÿÿÿÿÿÿÿÿÿÿÿÿD   k   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3À¸…ëQ¸®?      ğ?                edgel   ÿÿÿÿÿÿÿÿÿÿÿÿ/   ¸…ëQ¸¿A   ¸…ëQ¸?+   m   unknown
+      .@      3À              .@      3À¸…ëQ¸®?edgen   ÿÿÿÿÿÿÿÿÿÿÿÿ0   ¸…ëQ¸¿@   ¸…ëQ¸?,   o   unknown
+      .@      3@              .@      3@¸…ëQ¸®?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   ¥îÛ S  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3À¸…ëQ¸®?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0   ¥îÛ T  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@¸…ëQ¸®?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ3      ¥îÛ E  	fctd_markeyeattribÿÿÿÿÿÿÿÿp   ÿÿÿÿ4   ¥îß planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@        ¸…ëQ¸?      ğ¿                                      ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9   7   ;   \   
+   ÿÿÿÿedgeq   ÿÿÿÿÿÿÿÿÿÿÿÿH   ¸…ëQ¸¿`   ¸…ëQ¸?F   r   unknown
+      .À      3@              .À      3@¸…ëQ¸®?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ:   ¥îÛ O  vertexs   ÿÿÿÿÿÿÿÿÿÿÿÿ\   t   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3À¸…ëQ¸?                      ğ¿edgeu   ÿÿÿÿÿÿÿÿÿÿÿÿZ         3À`         3@W   v   unknown
+      .À      3À              .À      3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ<   ¥îÛ L  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3À              ğ¿                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ>   ¥îÛ N  vertexw   ÿÿÿÿÿÿÿÿÿÿÿÿ>   x   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@              ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ@   ¥îÛ W  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   ¥îÛ X  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3À        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   ¥îÛ I  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À        ¸…ëQ¸®?              ğ¿        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿH   ¥îÛ U  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@¸…ëQ¸®?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL   ¥îÛ V  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3À¸…ëQ¸®?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿN   ¥îÛ P  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3À¸…ëQ¸?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿO   ¥îÛ R  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .@      3@¸…ëQ¸?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿU   4   ¥îÛ F  idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿX   ¥îÛ Q  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@¸…ëQ¸?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿZ   ¥îÛ Y  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3À        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\   ¥îÛ M  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À                              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ`   ¥îÛ Z  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      .À      3@        End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 9368 
+$end 'sab'
+$begin 'sab'
+Design_0.setup/NativeGeometryFiles/0000388.sab
+BIN000000010084
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=body   ÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      ô¿      3@              ô?Âõ(\3@Âõ(\ú?string_attribname_attribgenattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAMEBox5lumpÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
+      ô¿      3@              ô?Âõ(\3@Âõ(\ú?	transformÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?	rgb_colorstattribÿÿÿÿÿÿÿÿ          Æîß ‘à?‘à?888888è?shellÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ÿÿÿÿ   
+      ô¿      3@              ô?Âõ(\3@Âõ(\ú?
+propertiesansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ Box5„          Á„„€face   ÿÿÿÿÿÿÿÿÿÿÿÿ	   
+      ÿÿÿÿ   
+      ô¿      3@Âõ(\ú?      ô?Âõ(\3@Âõ(\ú?
+      ô¿      ô?  …ëQ¸¿  …ëQ¸?	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      ô¿      3@              ô?Âõ(\3@        
+      ô¿      ô?  …ëQ¸¿  …ëQ¸?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      
+      ô¿      3@Âõ(\ú?      ô?Âõ(\3@Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        Ház®3@Âõ(\ú?                      ğ?      ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ …  	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ	   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ   
+
+      ô¿      3@              ô?      3@Âõ(\ú?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   	   
+      ô¿      3@              ô?Âõ(\3@            planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        Ház®3@                              ğ?      ğ?                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ            
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ   	   ¥îÛ †  	fctd_markeyeattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ   ¥îß face   ÿÿÿÿÿÿÿÿÿÿÿÿ         ÿÿÿÿ    
+
+      ô¿      3@              ô¿Âõ(\3@Âõ(\ú?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!      
+      ô¿      3@              ô?      3@Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@Âõ(\ê?              ğ?                              ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ"   #   $   %      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ&      '   (   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   &   )   *   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   ,         
+-   ÿÿÿÿedge.   ÿÿÿÿÿÿÿÿÿÿÿÿ/     …ëQ¸¿0     …ëQ¸?   1   unknown
+      ô?      3@Âõ(\ú?      ô?Âõ(\3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ ‡  	fctd_markeyeattribÿÿÿÿÿÿÿÿ2   ÿÿÿÿ   ¥îß face3   ÿÿÿÿÿÿÿÿÿÿÿÿ4   5      ÿÿÿÿ6   
+
+      ô¿Âõ(\3@              ô?Âõ(\3@Âõ(\ú?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7      
+      ô¿      3@              ô¿Âõ(\3@Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿Ház®3@Âõ(\ê?      ğ?                                      ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ8   )   9   :      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ;      8   <      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ;   =   >      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,   +      %   
+-   ÿÿÿÿedge?   ÿÿÿÿÿÿÿÿÿÿÿÿ@     …ëQ¸¿A     …ëQ¸?$   B   unknown
+      ô?      3@              ô?Âõ(\3@        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      C   D   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE   F      (   
+5   ÿÿÿÿedgeG   ÿÿÿÿÿÿÿÿÿÿÿÿ0         ô¿H         ô?'   I   unknown
+      ô¿Âõ(\3@Âõ(\ú?      ô?Âõ(\3@Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!   J      *   
+   ÿÿÿÿedgeK   ÿÿÿÿÿÿÿÿÿÿÿÿL         ô¿/         ô?)   M   unknown
+      ô¿      3@Âõ(\ú?      ô?      3@Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ$      J   N   -   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   $   E   O   
+-   ÿÿÿÿloopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ+   4   
+      ô?      3@              ô?Âõ(\3@Âõ(\ú?    idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ‹  vertexP   ÿÿÿÿÿÿÿÿÿÿÿÿ   Q   vertexR   ÿÿÿÿÿÿÿÿÿÿÿÿ   S   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?Ház®3@Âõ(\ú?              ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ      ¥îÛ ˆ  	fctd_markeyeattribÿÿÿÿÿÿÿÿT   ÿÿÿÿ   ¥îß faceU   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ-      ÿÿÿÿV   
+
+      ô?      3@              ô?Âõ(\3@Âõ(\ú?loopÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿE      
+      ô¿Âõ(\3@              ô?Âõ(\3@Âõ(\ú?    planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        Âõ(\3@Âõ(\ê?              ğ¿                              ğ¿coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿW   C   F   X      ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ   !   "   <   
+   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿC   W   !   :   
+   ÿÿÿÿedgeY   ÿÿÿÿÿÿÿÿÿÿÿÿL   Âõ(\ê¿Z   Âõ(\ê?9   [   unknown
+      ô¿      3@              ô¿      3@Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ#   "   W   \      ÿÿÿÿedge]   ÿÿÿÿÿÿÿÿÿÿÿÿA         ô¿Z         ô?8   ^   unknown
+      ô¿      3@              ô?      3@        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF   E   #   >   
+5   ÿÿÿÿedge_   ÿÿÿÿÿÿÿÿÿÿÿÿ`         ô¿@         ô?=   a   unknown
+      ô¿Âõ(\3@              ô?Âõ(\3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%   ¥îÛ   vertexb   ÿÿÿÿÿÿÿÿÿÿÿÿ%   c   vertexd   ÿÿÿÿÿÿÿÿÿÿÿÿN   e   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?Ház®3@                      ğ¿        coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7   9   &   D   
+   ÿÿÿÿedgef   ÿÿÿÿÿÿÿÿÿÿÿÿH     …ëQ¸¿L     …ëQ¸?C   g   unknown
+      ô¿      3@Âõ(\ú?      ô¿Âõ(\3@Âõ(\ú?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ=   '   ,   O   5   ÿÿÿÿcoedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ'   =   7   X   
+5   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ(   ¥îÛ Œ  vertexh   ÿÿÿÿÿÿÿÿÿÿÿÿ(   i   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        Âõ(\3@Âõ(\ú?      ğ¿                coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ)   8   +   N   
+   ÿÿÿÿidansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*   ¥îÛ   vertexj   ÿÿÿÿÿÿÿÿÿÿÿÿD   k   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@Âõ(\ú?      ğ?                edgel   ÿÿÿÿÿÿÿÿÿÿÿÿ/   Âõ(\ê¿A   Âõ(\ê?+   m   unknown
+      ô?      3@              ô?      3@Âõ(\ú?edgen   ÿÿÿÿÿÿÿÿÿÿÿÿ0   Âõ(\ê¿@   Âõ(\ê?,   o   unknown
+      ô?Âõ(\3@              ô?Âõ(\3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ/   ¥îÛ —  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0   ¥îÛ ˜  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?Âõ(\3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿ3      ¥îÛ ‰  	fctd_markeyeattribÿÿÿÿÿÿÿÿp   ÿÿÿÿ4   ¥îß planesurfaceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?Ház®3@Âõ(\ê?      ğ¿                                      ğ?coedgeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9   7   ;   \   
+   ÿÿÿÿedgeq   ÿÿÿÿÿÿÿÿÿÿÿÿH   Âõ(\ê¿`   Âõ(\ê?F   r   unknown
+      ô¿Âõ(\3@              ô¿Âõ(\3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ:   ¥îÛ “  vertexs   ÿÿÿÿÿÿÿÿÿÿÿÿ\   t   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      3@Âõ(\ê?                      ğ¿edgeu   ÿÿÿÿÿÿÿÿÿÿÿÿZ     …ëQ¸¿`     …ëQ¸?W   v   unknown
+      ô¿      3@              ô¿Âõ(\3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ<   ¥îÛ   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ              3@              ğ¿                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ>   ¥îÛ ’  vertexw   ÿÿÿÿÿÿÿÿÿÿÿÿ>   x   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        Âõ(\3@              ğ?                idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ@   ¥îÛ ›  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?Âõ(\3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿA   ¥îÛ œ  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿD   ¥îÛ   straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿Ház®3@Âõ(\ú?              ğ¿        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿH   ¥îÛ ™  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿Âõ(\3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿL   ¥îÛ š  pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      3@Âõ(\ú?idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿN   ¥îÛ ”  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?      3@Âõ(\ê?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿO   ¥îÛ –  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô?Âõ(\3@Âõ(\ê?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿU   4   ¥îÛ Š  idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿX   ¥îÛ •  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿Âõ(\3@Âõ(\ê?                      ğ¿idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿZ   ¥îÛ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿      3@        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\   ¥îÛ ‘  straightcurveÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿Ház®3@                      ğ?        idansoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ`   ¥îÛ   pointÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ      ô¿Âõ(\3@        End-of-ACIS-data
+
+# Ansoft project setting data. Non-Ansoft programs
+# should not read the rest of this file.
+B_SETNGS 1.03
+ACIS BinaryFile˜             SpatialACIS 22.0.2 NTWed Nov 02 17:51:48 2016      ğ?íµ ÷Æ°>»½×Ùß|Û=	transform   ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?point   ÿÿÿÿÿÿÿÿÿÿÿÿ                        flagansoftattribÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€unitsansoftattribÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@coloransoftattribÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
+E_SETNGS 
+
+B_SYMTAB 
+E_SYMTAB 
+ANSOFT OFFSET: 9368 
+$end 'sab'
+$end 'Design_0.setup/NativeGeometryFiles'
+$end 'AllReferencedFilesForProject'
+$begin 'ProjectPreview'
+	Thumbnail64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCABgAGADASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAr4S8Wf8FB/hB4W+P/AMU/2f7fwJ8df\
+G+p/AbR/hxqXx38cfDX4Zz+PvDPwqvvi7omr+Ifhz4cvvB/hzVZvHfxC1nUdI0/Tp3fwT4O8UafpcPi\
+O2n1q+02C11iXS/Z/wBqH4wax8GfhJqmseCrXR9X+LvjHUtL+GfwM8M67BdX+k6/8YPG8smm+E5/EGj\
+aTqdrqeq/DzQo11LxV41bR2l1TTPAvgHxPrltbyjSpFr84/gP4A0n4Z/tW/H3wtpN7qurGX9nX9mvxd\
+r/AIg16Wxk1zxX45+Iv7RP/BQP4h/ETxnrKaRp9nYWWq61498UeJNVuLXS7HTtIs5tYe10jTNN0yG0s\
+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\
+KU17709F/wAH/IKKKK/NzrP/2Q=='
+	$begin 'DesignInfo'
+		DesignName='IEDesign1'
+		Notes=''
+		Factory='HFSS-IE'
+		IsSolved=false
+		'Nominal Setups'[1: 'Setup1']
+		'Optimetrics Setups'[0:]
+		'Optimetrics Experiment Types'[0:]
+		Image64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCADIAMgDASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAooooAKKKKACivM/jB8VvDfwV8A6n8Q\
+fFFvquoWVrqvhHwxpGh6DDYS654q8bfETxjoHw6+HPgvRpNZ1Gy06w1XW/iB4r8M6Rb3mrahpmi2M2t\
+Jea1qul6VBeahbflD+y/8Rf+ChXj34XXfj/xN+0n8G3+I+q/Fb9oDwb498G+MP2d1+Ifwc8CX/wj+P3\
+xP+F+m6P+z5L8O/H/AMMvE9j4RNj4X2XE/jrV/GmrahHY6dPFPo86amup+lhcsq4rDVcX7anh6FKcad\
+6nP705RlK0VCE2+WMbybslzR3bIlNRajZttX0P2qor88bP47/tp+EVhtfE3wX/AGfPjXpmkOLrW/Gvw\
+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\
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q=='
+	$end 'DesignInfo'
+$end 'ProjectPreview'
