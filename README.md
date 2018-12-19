@@ -2,5 +2,5 @@ Source code files of Anenna design using HFSS(High Frequency Software Simulation
 
 
 
-Contributors: Gorla Praveen, Sushma A, Ravuri Saiteja, Karthik K 
+Contributors: Gorla Praveen
 
